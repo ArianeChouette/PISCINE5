@@ -1,0 +1,37 @@
+/* Mise en place de l'image de fond*/
+.FA {
+    background-image: url('marteau.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -20px;
+}
+
+/*Paramètres du corps de la page*/
+body {
+  font-family: "Times New Roman";
+}
+
+/*Paramètres du cadre demandant les infos*/
+.Texte_Superpose {
+  left: 49%;  /*Place le texte en bas à gauche*/
+  position: absolute;  /*Décale le texte sur le bas droit*/
+  top: 45%; /*Remonte le texte sur le centre droit*/
+  transform: translate(-58%, -40%); /* Translate le texte légèrement plus à gauche*/
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: black;
+  color : #d3d6d8;
+  }
+
+/*Paramètres footer (bas de page)*/
+.page-footer {
+  font-style: italic;
+  font-family: "Times New Roman";
+  height: 150px;
+}
+
+/*Couleur de l'écriture du bouton Connexion*/
+.button {
+  color: black;
+}

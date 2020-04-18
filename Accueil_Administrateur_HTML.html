@@ -9,12 +9,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!--Lien des différentes pages entre elles-->
-  <link rel="stylesheet" type="text/css" href="Achat_CSS.css">
+  <link rel="stylesheet" type="text/css" href="Accueil_Administrateur_CSS.css">
   <link href="ECE_Encheres_HTML.html" rel="stylesheet" type="text/html" />
   <link href="Vente_HTML.html" rel="stylesheet" type="text/html" />
   <link href="Panier_HTML.html" rel="stylesheet" type="text/html" />
 
-                <title>Mon compte</title>
+                <title>Mon compte, Administrateur</title>
 
 </head>
 
@@ -30,7 +30,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="A_ECE_Encheres_HTML.html">ECE Enchères</a>   <!--Bouton ECE Enchères-->
+              <a class="navbar-brand" href="AD_ECE_Encheres_HTML.html">ECE Enchères</a>   <!--Bouton ECE Enchères-->
             </div>
             <!-- Fin du bouton ECE-->
 
@@ -38,18 +38,19 @@
               <div class="collapse navbar-collapse" >
                 <!--Création d'une liste pour ajouter x bouttons-->
                 <ul class="nav navbar-nav">
-                  <li><a href="Achat_HTML.html">Acheter</a></li>
-                  <li class="active"><a href="A_Accueil_Client.html">Mon compte</a></li>
+                  <li><a href="AD_Vente_HTML.html">Vendre</a></li>
+                  <li><a href="AD_Achat_HTML.html">Acheter</a></li>
+                  <li class="active"><a href="Accueil_Administrateur_HTML.html">Mon compte</a></li>
                 </ul>
                 <!--Fin des boutons sur la barre de recherche-->
 
-              <!--Insertion du panier-->
-              <form class="navbar-form navbar-right">
-                <button class="btn btn-default" type="button">
-                  <a href="Panier_HTML.html">Panier <img src="panier.jpg" style="height:20px; width: 20px;"></a>
-                </button>
-              </form>
-              <!--Fin insertion du panier-->
+                <!--Insertion du panier-->
+                <form class="navbar-form navbar-right">
+                  <button class="btn btn-default" type="button">
+                    <a href="AD_Panier_HTML.html">Panier <img src="panier.jpg" style="height:20px; width: 20px;"></a>
+                  </button>
+                </form>
+                <!--Fin insertion du panier-->
 
               <!-- Création de la barre de recherche-->
               <form class="navbar-form navbar-right" role="search">
@@ -71,44 +72,47 @@
           <!-- Séparation de l'écran en plusieurs cadres/colonnes-->
           <div class="container text-center">
 
+                <h1 id="Admin">Administrateur</h1>
+
             <div class="row">
 
               <!-- Première séparation de l'écran de manière horizontale = CADRE 1, occupe 3/12ème de la largeur-->
-              <div class="col-sm-2 well">
-                <img src="avatar.jpg" alt="Photo de profil" title="Votre photo" style="height:150px; widht: 110px"><br><br>
 
-                <!-- Permet peut être le changement de photo par l'utilisateur, à lier avec BDD-->
-                <input type="file" name="file">
+              <!--Gestion des comptes acheteurs par l'utilisateur-->
+              <div class="GA col-sm-3 well">
 
-                <p>Jean-François</p>
-                <p>Petit</p>
-                <p>Date de naissance : 25/06/1960</p>
+                  <h3><strong>Gestion des</strong></h3>
+                  <h3 id="EGA">comptes acheteurs :</h3>
+                  <p>Compte XXX<button class="btn"><a href="#">Supprimer le compte</a></button></p>
+
               </div>
               <!--Fin du cadre de gauche-->
 
               <!--Cadre du milieu-->
-              <div class="col-sm-5">
+              <!--Gestion des ventes en cours par l'administrateur-->
+              <div class="DR col-sm-4 well">
+
+                <h3><strong>Gestion des</strong></h3>
+                <h3 id="EDR">ventes en cours :</h3>
+                <p>Vente XXX<button class="btn"><a href="#">Supprimer la vente</a></button></p>
+
               </div>
-              <!--Fin cadre du milieu-->
+              <!--Fin du cadre du milieu-->
 
               <!--Cadre de droite-->
-              <div class="col-sm-4 well" style="margin-left: 50px">
-                <p class="adress">Adresse : 176 Boulevard Saint Germain,<br>
-                                            75005, Paris.</p>
-                <p>Téléphone : 06-34-92-54-01</p>
-                <p>Date d'inscription : 13-04-2020</p>
-                <p> Dernière connexion</p>
-                <p>Dernier achat</p>
-                <p>Dernière vente</p>
-                <p>Evaluation du vendeur</p>
+              <!--Gestion des comptes vendeurs par l'administrateur-->
+              <div class="MI col-sm-3 well">
+
+                <h3><strong>Gestion des</strong></h3>
+                <h3 id="EMI">comptes vendeurs :</h3>
+                <p>Compte XXX<button class="btn"><a href="#">Supprimer le compte</a></button></p>
+
               </div>
-              <!--Fin du cadre de croite-->
+              <!--Fin cadre de droite-->
+
 
             </div>
 
-            <div class="row">
-              <button class="btn btn-outline-secondary btn-lg" style="margin-right: 100px"><a href="Achat_HTML.html">Pour acheter un objet c'est ici</a></button><br><br>
-            </div>
 
           </div>
 
@@ -121,7 +125,7 @@
 
               <!--Cadre Nous contacter-->
               <div class="col-lg-8 col-md-8 col-sm-12">
-                <h5><strong>Nous contacter :</strong></h5><br>
+                <h3><strong>Nous contacter :</strong></h3><br>
                 <ul>
                   <li>Par <a href="mailto:ece.encheres@gmail.com">mail</a></li>
                   <li>Par téléphone : 01-37-94-53-81</li>

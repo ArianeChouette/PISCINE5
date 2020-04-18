@@ -1,0 +1,35 @@
+/*Page ECE_Encheres_HTML*/
+.COL_ECE { /* Mise en place de l'image de fond*/
+    background-image: url('accueil.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -20px;
+}
+
+body {
+  font-family: "Times New Roman";
+}
+
+.overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Texte_Superpose {
+  left: 50%;  /*Place le texte en bas à gauche*/
+  position: absolute;  /*Décale le texte sur le bas droit*/
+  top: 45%; /*Remonte le texte sur le centre droit*/
+  transform: translate(-50%, -55%); /* Translate le texte légèrement plus à gauche*/
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 4px dashed black;
+  color : #d3d6d8;
+  }
+
+
+.page-footer {
+  font-style: italic;
+  font-family: "Times New Roman";
+  height: 160px;
+}

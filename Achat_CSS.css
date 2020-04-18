@@ -1,0 +1,81 @@
+/*Page Achat_HTML*/
+
+.Premiere {
+  background-image: url('montre.jpg');
+  background-size: 550px;
+  background-position: top;
+  position: relative;
+  text-decoration: underline;
+  margin-left: 85px;
+  margin-top: 50px;
+  width: 300px
+}
+
+.Deuxieme {
+  background-image: url('poker.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-decoration: underline;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 300px
+}
+
+.Troisieme {
+  background-image: url('immediat.jpg');
+  background-size: 800px;
+  background-position: center;
+  position: relative;
+  text-decoration: underline;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 300px
+}
+
+/* Page Achat_HTML*/
+
+.COL1 {
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+  color : #3331bc;
+}
+
+.footer {
+  font-style: italic;
+  font-family: "Times New Roman";
+  height: 145px;
+  margin-top: 50px;
+}
+
+/*Page Achat_E_FT...*/
+
+.container h2 {
+  text-align: center;
+}
+
+.container h4 {
+  text-align: center;
+}
+
+/*Commun à plusieures pages */
+
+body {
+  font-family: "Times New Roman";
+}
+
+.overlay {
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-footer {
+  font-style: italic;
+  height: 150px;
+  margin-top: 50px;
+  font-family: "Times New Roman";
+}
