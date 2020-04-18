@@ -101,10 +101,25 @@
 
               <!--Première ligne = premier item-->
               <tr>
-                <td>IMG</td><!-- TD = changement dee colonne-->
-                <td>Collier</td>
-                <td>24carats parfait état.</td>
-                <td>1200€</td>
+                <?php
+                  $database="vente";
+
+                  //Connexion de la BDD :
+                  $db_handle = mysqli_connect('localhost', 'root', '');
+                  $db_found = mysqli_select_db($db_handle, $database);
+
+                  $sql="SELECT * FROM objet";
+                  $result=mysqli_query($db_handle,$sql);
+
+                  if($result)
+                  {
+                    while($objetvente=mysqli_fetch_array($result))
+                    {
+                      echo $objetvente['Nom'] . " " . $objetvente['Prix']. " " . $objetvente['id'] . " " . "<br>";
+                    }
+                  }
+
+                ?>
                 <td><button class="btn"><a href="AD_Panier_HTML.html">Ajouter au panier</a></button></td>
               </tr>
 
