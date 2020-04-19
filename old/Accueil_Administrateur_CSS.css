@@ -1,0 +1,59 @@
+/*Page d'accueil administrateur*/
+
+body {
+  font-family: "Times New Roman";
+}
+
+#Admin {
+  border: 3px solid black;
+  text-decoration-style: solid;
+}
+
+.GA {
+  margin-left: 85px;
+  margin-top: 50px;
+}
+
+.GA h3 {
+  text-decoration: underline;
+}
+
+#EGA {
+  font-style: italic;
+  text-decoration-style: solid;
+}
+
+.MI {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.MI h3 {
+  text-decoration: underline;
+}
+
+#EMI {
+  font-style: italic;
+  text-decoration-style: solid;
+}
+
+.DR {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.DR h3 {
+  text-decoration: underline;
+}
+
+#EDR {
+  font-style: italic;
+  text-decoration-style: solid;
+}
+
+.page-footer {
+  font-style: italic;
+  font-family: "Times New Roman";
+  height: 150px;
+  margin-top: 50px;
+}

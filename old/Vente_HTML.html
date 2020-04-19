@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!--Chargement des modules nécessaires-->
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="fonction_champ_vide.js">  </script> <!--JavaScript-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  <!--Bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <!-- Jquery-->
+
+  <!--Lien des différentes pages entre elles-->
+  <link rel="stylesheet" type="text/css" href="Achat_CSS.css">
+  <link href="ECE_Encheres_HTML.html" rel="stylesheet" type="text/html" />
+  <link href="Accueil_Client.html" rel="stylesheet" type="text/html" />
+  <link href="Panier_HTML.html" rel="stylesheet" type="text/html" />
+
+                    <title>Ventes</title>
+
+</head>
+
+<body>
+
+  <!--Création de la barre supérieur-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <!-- Création du bouton ECE Enchères-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="V_ECE_Encheres_HTML.html">ECE Enchères</a>   <!--Bouton ECE Enchères-->
+      </div>
+      <!-- Fin du bouton ECE-->
+
+        <!-- Ajout des boutons sur la barre de navigation-->
+        <div class="collapse navbar-collapse" >
+          <!--Création d'une liste pour ajouter x bouttons-->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Vente_HTML.html">Vendre</a></li>
+            <li><a href="V_Accueil_Client.html">Mon compte</a></li>
+          </ul>
+          <!--Fin des boutons sur la barre de recherche-->
+
+        <!--Insertion du panier-->
+        <form class="navbar-form navbar-right">
+          <button class="btn btn-default" type="button">
+            <a href="Panier_HTML.html">Panier <img src="panier.jpg" style="height:20px; width: 20px;"></a>
+          </button>
+        </form>
+        <!--Fin insertion du panier-->
+
+        <!-- Création de la barre de recherche-->
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group input-group">
+            <input type="text" class="form-control" placeholder="Rechercher un article">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+          </div>
+        </form>
+        <!--Fin de la barre de recherche-->
+        </div>
+      </div>
+    </nav>
+    <!--Fin de la barre supérieure-->
+
+  <form action="Vente_PHP.php" method="POST"></form>
+    <header style="background-image: url('Fond_Vente.jpg'); background-size: 120%;">
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('.headerV').height($(window).height());
+        });
+      </script>
+      <div class="overlay1"></div>
+
+      <!--Création d'un bloc de contenu-->
+            <div class="VenteC text-center">
+
+          <div class="row">
+              <h2>Bienvenu dans l'espace de vente.</h2><br><br><br><br>
+
+          <!--Première colonne de largeur 4/12-->
+          <div class="COL1 col-sm-5 well" style="background-color: rgba(0, 0, 0, 0.1); margin-left: 7%; margin-right: 50px">
+
+            <h3>Si vous souhaitez vendre un de vos objets c'est par ici que ça se passe !<br>
+               Complétez intégralement le formulaire ci-dessous :</h3><br>
+            <h4>*L'ensemble des champs est obligatoire</h4><br><br>
+
+            <!--Champs du formulaire-->
+            <form>
+              <table>
+
+                <!--Champs du nom-->
+                <tr style="font-size: 16px">
+                  <td><label>Nom de l'objet en vente :</label></td>
+                  <td><input type="text" name="Nom" placeholder="Nom" required></td>
+                </tr>
+
+                <!--Champs de description-->
+                <tr style="font-size: 16px">
+                  <td><strong>Descriptions et caractéristiques :</strong></td>
+                  <td><TEXTAREA name="Caracteristiques" rows=4 cols=50 placeholder:"Qualité/Défauts" style="margin-top: 10px; margin-left: 20px"></textarea><p></td>
+                </tr>
+
+                <!--Champ du prix de l'objet-->
+                <tr style="font-size: 16px">
+                  <td><label>Prix :</label></td>
+                  <td><input type="prix" name="Prix" placeholder="€" style="margin-top: 10px" required></td>
+                </tr>
+
+                <!-- Sélection type de vente-->
+                <tr style="font-size: 16px">
+            			  <td><strong>Type de vente</strong></td>
+            				<td>
+            						<select name="Type_de_vente" style="margin-top: 10px">
+                                <option>Sélectionnez un type de vente</option>
+            						        <option>Enchères</option>
+            						        <option>Meilleure offre</option>
+            						        <option>Achat immédiat</option>
+            						</select>
+            				<td>
+            		</tr>
+
+                <!--Sélection de la catégorie-->
+                <tr style="font-size: 16px">
+            			  <td><strong>Catégorie</strong></td>
+            				<td>
+            						<select name="Categorie" style="margin-top: 10px">
+                                <option>Sélectionnez une catégorie</option>
+            						        <option>Ferraille ou Trésor</option>
+            						        <option>Bon pour le musée</option>
+            						        <option>Accessoire VIP</option>
+            						</select>
+            				<td>
+            		</tr>
+
+              </table>
+            </form>
+
+            <!--Certification du vendeur-->
+            <div>
+                <input type="checkbox" name="Accepter" required>
+                <label for="Accepter" style="font-size: 16px">J'atteste que les informations sont exactes.</label>
+            </div>
+
+            <!--Bouton de soumission à la vente-->
+            <button class="btn"><a href="Accueil_Client.html">Mettre en vente</a></button>
+
+            </div>
+          <!--Fermeture de la 1ère colonne-->
+
+          <!--Deuxième colonne de largeur 4/12-->
+          <div class="COL2 col-sm-4" style="background-color: rgba(0, 0, 0, 0.1); margin-right: 7%; margin-left: 7%">
+              <h3>Ajoutez une image et/ou des vidéos de votre objet sans plus tarder</h3>
+              <img src="avatar.jpg" alt="Photo de profil" title="Votre photo" style="height:150px; widht: 110px"><br><br>
+              <input type="file" name="file">
+              <img src="avatar.jpg" alt="Photo de profil" title="Votre photo" style="height:150px; widht: 110px"><br><br>
+              <input type="file" name="file">
+              <img src="avatar.jpg" alt="Photo de profil" title="Votre photo" style="height:150px; widht: 110px"><br><br>
+              <input type="file" name="file">
+          </div>
+          <!--Fermeture de la 2ème colonne-->
+
+        </div>
+      </div>
+
+</header>
+
+
+    <!--Footer = bas de page-->
+    <footer class="footer" style="background: black; color: white">
+
+      <!--Création d'un cadre d'écriture-->
+      <div class="container">
+      <div class="row">
+
+        <!--Cadre Nous contacter-->
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h3><strong>Nous contacter :</strong></h3><br>
+          <ul>
+            <li>Par <a href="mailto:ece.encheres@gmail.com">mail</a></li>
+            <li>Par téléphone : 01-37-94-53-81</li>
+          </ul>
+        </div>
+        <!--Fin cadre Nous contacter-->
+
+        <!--Création Copyright-->
+        <div class="col-lg-8 col-md-8 col-sm-12 text-right">
+          <p> 2020 Copyright | Droit d'auteur: Zakaria, Hubert, Ariane</p>
+        </div>
+        <!--Fin Copyright-->
+
+      </div>
+    </div>
+  </div>
+
+    </footer>
+    <!--Fin du footer-->
+
+  </body>
+
+  </html>
