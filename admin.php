@@ -1,27 +1,19 @@
 <?php
 
 // Insertion code init
+ $title = "Admin";
   include("include/init.php");
 
-// Foncction de récupération ID
-// Si visite profil d'un vendeur/acheteur
-  if(!empty($_GET["id"])){
-    $user = getUser($_GET["id"]);
-    $title = "Profil";
-  }
-// Si visite de son propre profil
-  else {
-    $title = "Mon compte";
-    $user = $currentUser;
+  if(!isConnect() || $currentUser["admin"] == 0){
+      header("Location: index.php");
   }
 
+
 // Requête de récupération des données de l'utilisateur
-  $user_id = $user["id"];
   $info = mysqli_query($bdd, "SELECT * FROM utilisateurs");
 
   $vente = mysqli_query($bdd, "SELECT * FROM objets");
 
-  $user_role = mysqli_query($bdd, "SELECT admin FROM utilisateurs WHERE id = '$user_id'");
 
 //Insertion de la barre navigateur sur la page
   include("include/header.php");

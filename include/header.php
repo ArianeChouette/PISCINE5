@@ -48,7 +48,7 @@
               <li class="<?php if($title == "Mon compte"){ echo 'active'; } ?>" ><a href="account.php">Mon compte</a></li>
 
                   <?php if($currentUser["admin"]) : ?>
-                    <li><a href="admin.php">Espace admin</a></li>
+                    <li class="<?php if($title == "Admin"){ echo 'active'; } ?>"><a href="admin.php">Espace admin</a></li>
                   <?php endif; ?>
 
               <li><a href="logout.php">Déconnexion</a></li>
