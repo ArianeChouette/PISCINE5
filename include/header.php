@@ -60,7 +60,7 @@
         <!--Insertion du panier-->
         <form class="navbar-form navbar-right">
           <button class="btn btn-default" type="button">
-            <a href="panier.php">Panier <img src="panier.jpg" style="height:20px; width: 20px;"></a>
+            <a href="panier.php">Panier <img src="img/panier.jpg" style="height:20px; width: 20px;"></a>
           </button>
         </form>
         <!--Fin insertion du panier-->

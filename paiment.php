@@ -21,9 +21,9 @@
             <!--Type de carte-->
             <!--Case du choix du type de carte-->
             <div>
-                <input type="checkbox" required> <img src="MC.jpg" style="height: 30px; width: 40px">
-                <input type="checkbox" required> <img src="AE.jpg" style="height: 30px; width: 40px">
-                <input type="checkbox" required> <img src="CB.jpg" style="height: 30px; width: 40px">
+                <input type="checkbox" required> <img src="img/MC.jpg" style="height: 30px; width: 40px">
+                <input type="checkbox" required> <img src="img/AE.jpg" style="height: 30px; width: 40px">
+                <input type="checkbox" required> <img src="img/CB.jpg" style="height: 30px; width: 40px">
             </div>
 
             <!--Champs du Nom et prénom-->
