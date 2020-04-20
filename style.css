@@ -90,7 +90,21 @@ body {
   border: 4px dashed black;
   color : #d3d6d8;
   width: 500px;
+  margin-top: 150px;
   }
+
+/*Cadre de bienvenue*/
+  .Texte_SuperposeA {
+    left: 50%;  /*Place le texte en bas à gauche*/
+    position: absolute;  /*Décale le texte sur le bas droit*/
+    top: 50%; /*Remonte le texte sur le centre droit*/
+    transform: translate(-58%, -55%); /* Translate le texte légèrement plus à gauche*/
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 4px dashed black;
+    color : #d3d6d8;
+    width: 500px;
+    }
 
 /* Caractéristiques class page-footer*/
 .page-footer {

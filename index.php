@@ -20,7 +20,7 @@
      </header>
 
      <!--Création d'un espace pour le texte à superposer-->
-     <div class="Texte_Superpose well">
+     <div class="Texte_SuperposeA well">
        <h1>Bienvenue sur notre site de vente !</h1>
        <h4>Vous aurez ici la possibilité de trouver l'objet de vos rêves parmis un grand nombre de propositions de ventes.<br>
            Collectionneur, comme amateur, petits et grands allez explorer notre site pour découvrir la perle rare !</h4><br>

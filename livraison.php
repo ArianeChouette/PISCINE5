@@ -21,34 +21,34 @@
             <!--Champs du nom-->
             <tr>
               <td><label>Nom :</label></td>
-              <td><input type="text" name="Nom" placeholder="Nom" required></td>
+              <td><input type="text" name="Nom" placeholder="Nom" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
             <!--Champs du prénom-->
             <tr>
               <td><label>Prénom :</label></td>
-              <td><input type="text" name="Prénom" placeholder="Prénom" required></td>
+              <td><input type="text" name="Prénom" placeholder="Prénom" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
             <!--Champs de la date de naissance-->
             <tr>
               <td><label>Téléphone : </label></td>
-              <td><input type="tel" name="Number" placeholder="Number" required></td>
+              <td><input type="tel" name="Number" placeholder="Number" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
             <!--Champs de l'adresse-->
             <tr>
               <td><label>N° de voie</label></td>
-              <td><input type="text" name="Numero de voie" placeholder="N° de voie" required></td>
-              <td><input type="text" name="Type de voie" placeholder="Rue, Boulevard..." required></td>
-              <td><input type="text" name="Complément" placeholder="Bâtiment, étage..." required></td>
-              <td><input type="number" name="Code postal" placeholder="Code postal" required></td>
+              <td><input type="text" name="Numero de voie" placeholder="N° de voie" style="margin-bottom: 7px;" required="required"></td>
+              <td><input type="text" name="Type de voie" placeholder="Rue, Boulevard..." style="margin-bottom: 7px;" required="required"></td>
+              <td><input type="text" name="Complément" placeholder="Bâtiment, étage..." style="margin-bottom: 7px;" required="required"></td>
+              <td><input type="number" name="Code postal" placeholder="Code postal" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
             <!--Champ Pays-->
             <tr>
               <td><label>Pays :</label></td>
-              <td><input type="country" name="Pays" placeholder="Pays" required></td>
+              <td><input type="country" name="Pays" placeholder="Pays" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
             <!--Champs de l'adresse e-mail-->

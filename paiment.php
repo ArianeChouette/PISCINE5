@@ -29,25 +29,25 @@
             <!--Champs du Nom et prénom-->
             <tr>
               <td><label>Nom et prénom du détenteur :</label></td>
-              <td><input type="text" name="Nom" placeholder="Nom" required></td>
+              <td><input type="text" name="Nom" placeholder="Nom" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
             <!--Champs du numéro de carte-->
             <tr>
               <td><label>Numéro de carte : </label></td>
-              <td><input type="number" name="Number" placeholder="Number" required></td>
+              <td><input type="number" name="Number" placeholder="Number" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
             <!--Champs de la date d'expiration'-->
             <tr>
               <td><label>Date d'expiration : </label></td>
-              <td><input type="number" name="Number" placeholder="Number" required></td>
+              <td><input type="number" name="Number" placeholder="Number" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
             <!--Champs du cryptogramme-->
             <tr>
               <td><label>Cryptogramme : </label></td>
-              <td><input type="number" name="Number" placeholder="Number" required></td>
+              <td><input type="number" name="Number" placeholder="Number" style="margin-bottom: 7px;" required="required"></td>
             </tr>
 
 
