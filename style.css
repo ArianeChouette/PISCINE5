@@ -1,45 +1,70 @@
+/*Paramètres corps de page*/
 body {
   background-color: lightgrey;
   font-family: "Times New Roman";
+  color : black;
+  font-size: 20px;
 }
 
-.header {
+/*Paramètre header page*/
+.header { /* Mise en place de l'image de fond*/
+    background-image: url('img/parchemin.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+/*Charte*/
+#N {
+  color: #c22205;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#Ch {
+  padding-top : 80px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('img/page.jpg');
+  border: 2px solid;
   text-align: center;
+  background-size: 96%;
 }
 
+/*Couleur numéro Panier*/
 #A {
   color: #c80d62
 }
 
+/*Page Identification*/
+.FA {
+  background-image: url('img/marteau.jpg');
+  background-size: cover;
+}
+
+/* Paramètres case Total de la commande panier*/
 .Total {
   text-align: center;
   padding-left: 50px;
 }
 
+/* Paramètres case Mon Panier */
 .Articles {
   text-align: center;
   padding-left: 50px;
 }
 
-.page-footer {
-  padding-top: 2px;
-  font-style: italic;
-  font-family: "Times New Roman";
-}
-
-
 /*Page Paiement*/
-
 .Paiement {
   padding-left: 40%;
 }
 
+/*Paramètres cartes de paiement */
 .Cartes {
   padding-left: 200px;
 }
 
 
-/*Page ECE_Encheres_HTML*/
+/*Page ECE_Encheres*/
 .COL_ECE { /* Mise en place de l'image de fond*/
     background-image: url('img/accueil.jpg');
     background-size: cover;
@@ -48,47 +73,42 @@ body {
     top: -20px;
 }
 
-body {
-  font-family: "Times New Roman";
-}
 
 .overlay {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*Cadre de bienvenue*/
 .Texte_Superpose {
   left: 50%;  /*Place le texte en bas à gauche*/
   position: absolute;  /*Décale le texte sur le bas droit*/
-  top: 45%; /*Remonte le texte sur le centre droit*/
-  transform: translate(-50%, -55%); /* Translate le texte légèrement plus à gauche*/
+  top: 56%; /*Remonte le texte sur le centre droit*/
+  transform: translate(-58%, -55%); /* Translate le texte légèrement plus à gauche*/
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   border: 4px dashed black;
   color : #d3d6d8;
+  width: 500px;
   }
 
-
+/* Caractéristiques class page-footer*/
 .page-footer {
   font-style: italic;
+  padding-top: 2px;
   font-family: "Times New Roman";
-  height: 160px;
+  height: 190px;
 }
 
-body {
+/* Caractéristique class footer*/
+.footer {
+  font-style: italic;
   font-family: "Times New Roman";
-  color : black;
-  font-size: 20px;
+  height: 145px;
+  margin-top: 50px;
 }
 
-.header { /* Mise en place de l'image de fond*/
-    background-image: url('parchemin.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-
+/* Paramètres formulaire inscription*/
 .Formulaire {
   left: 50%;  /*Place le texte en bas à gauche*/
   position: absolute;  /*Décale le texte sur le bas droit*/
@@ -98,20 +118,22 @@ body {
   background-color: rgba(0, 0, 0.5, 0.1);
 }
 
-/*Page Achat_HTML*/
-
+/*Page Achat*/
+/*Premier cadre*/
 .Premiere {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('img/montre.jpg');
   background-size: 550px;
   background-position: top;
 }
 
+/*Deuxième cadre*/
 .Deuxieme {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/poker.jpg');
   background-size: cover;
   background-position: center;
 }
 
+/*Troisième cadre*/
 .Troisieme {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/immediat.jpg');
   background-size: 800px;
@@ -125,6 +147,7 @@ body {
   width: 300px
 }
 
+/* Caractéristiques boutons FT/VIP/BM*/
 #menu a, #menu h4, #menu h3{
   color:white;
 }
@@ -153,18 +176,8 @@ body {
 }
 
 h2 {
-  text-decoration: underline;
-  color : #3331bc;
+  color : black;
 }
-
-.footer {
-  font-style: italic;
-  font-family: "Times New Roman";
-  height: 145px;
-  margin-top: 50px;
-}
-
-/*Page Achat_E_FT...*/
 
 .container h2 {
   text-align: center;
@@ -172,4 +185,39 @@ h2 {
 
 .container h4 {
   text-align: center;
+}
+
+
+/*Page gestion pour l'administrateur*/
+#Admin {
+  border: 3px solid black;
+  text-decoration-style: solid;
+}
+
+.GA {
+  margin-left: 85px;
+  margin-top: 50px;
+}
+
+.GA h3 {
+  text-decoration: underline;
+}
+
+#EGA {
+  font-style: italic;
+  text-decoration-style: solid;
+}
+
+.DR {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.DR h3 {
+  text-decoration: underline;
+}
+
+#EDR {
+  font-style: italic;
+  text-decoration-style: solid;
 }
