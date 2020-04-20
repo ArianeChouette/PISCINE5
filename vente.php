@@ -12,8 +12,9 @@
       $prix = $_POST['prix'];
       $type = $_POST['type'];
       $cat = $_POST['cat'];
+      $vendeurId = $currentUser["id"];
 
-      $sql = "INSERT INTO objets (nom, description, prix, type, cat) VALUES ('$nom', '$description', '$prix', '$type', '$cat')";
+      $sql = "INSERT INTO objets (id_vendeur, nom, description, prix, type, cat) VALUES ('$vendeurId', '$nom', '$description', '$prix', '$type', '$cat')";
       $result = mysqli_query($bdd, $sql);
 
       if($result) {
@@ -51,7 +52,7 @@
             <h4>*L'ensemble des champs est obligatoire</h4><br><br>
 
             <!--Champs du formulaire-->
-            <form>
+            <form method="POST">
               <table>
 
                 <!--Champs du nom-->
