@@ -64,7 +64,7 @@
 
       <!--Bouton de validation de l'adresse-->
       <br><br>
-      <button class="btn"><a href="Paiment.php">Valider mes coordonnées</a></button>
+      <button class="btn"><a href="paiment.php">Valider mes coordonnées</a></button>
 
 </body>
 

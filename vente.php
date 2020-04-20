@@ -2,7 +2,7 @@
 	$title = "vente";
 	include("include/init.php");
 
-    // Recpetion du formulaire et inscription de la personne
+    // Recpetion du formulaire et mise en place de la vente
     if(!empty($_POST)){
 
 

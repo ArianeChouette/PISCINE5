@@ -8,7 +8,7 @@
       header("Location: index.php");
   }
 
-
+//suppression d'un user
  if(isset($_GET["delete_user"]) && !empty($_GET["delete_user"])){
      $id = $_GET["delete_user"];
      $req = "DELETE FROM utilisateurs WHERE id = '$id'";
@@ -20,7 +20,7 @@
          echo "Error description: " . mysqli_error($bdd);
      }
  }
-
+//suppression d'une vente
  if(isset($_GET["delete_objet"]) && !empty($_GET["delete_objet"])){
      $id = $_GET["delete_objet"];
      $req = "DELETE FROM objets WHERE id = '$id'";
